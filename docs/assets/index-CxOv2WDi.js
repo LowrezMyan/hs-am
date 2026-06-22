@@ -1,203 +1,51 @@
-import './style.css'
-
-const quickTags = [
-  'Fenster',
-  'Turen',
-  'Kueche',
-  'Bad',
-  'Boden',
-  'Waende',
-  'Schimmel',
-  'Wasserschaden',
-  'Montage',
-]
-
-const experienceFacts = [
-  {
-    title: 'Seit 2006',
-    text: '20 Jahre saubere Arbeit auf echten Baustellen',
-  },
-  {
-    title: 'Arsen vor Ort',
-    text: 'kein Vermittler, kein Callcenter, nur der Macher selbst',
-  },
-  {
-    title: 'Alles aus einer Hand',
-    text: 'Fenster, Waende, Boeden, Feuchte und Montage',
-  },
-]
-
-const serviceCards = [
-  {
-    title: 'Fenster & Turen',
-    note: 'Einbau, Austausch und saubere Abschluesse',
-    image: '/images/people/arsen-workshop.webp',
-    accent: 'Montage',
-    span: 'wide',
-  },
-  {
-    title: 'Bad & Fliesen',
-    note: 'Saubere Fliesen, Fugen und klare Kanten',
-    image: '/images/projects/tiles-after.webp',
-    accent: 'Fliesen',
-  },
-  {
-    title: 'Waende & Ausbau',
-    note: 'Trockenbau, Rigips und klare Linien',
-    image: '/images/people/arsen-framing.webp',
-    accent: 'Struktur',
-  },
-  {
-    title: 'Schimmel & Feuchte',
-    note: 'Schaden raus, Raum wieder ruhig',
-    image: '/images/projects/mold-after.webp',
-    accent: 'Sanierung',
-    span: 'tall',
-  },
-  {
-    title: 'Boeden & Belage',
-    note: 'PVC, Linoleum, Laminat und Kanten, die sitzen',
-    image: '/images/people/arsen-kitchen.webp',
-    accent: 'Boden',
-  },
-  {
-    title: 'Umbau & Details',
-    note: 'Kleine Arbeiten mit grossem Unterschied',
-    image: '/images/people/arsen-pro.webp',
-    accent: 'Ausbau',
-  },
-]
-
-const stories = [
-  {
-    title: 'Wasserschaden',
-    text: 'Sauber aufgeraumt, neu aufgebaut, wieder wohnbar.',
-    before: '/images/projects/water-damage-before.webp',
-    after: '/images/projects/water-damage-after.webp',
-  },
-  {
-    title: 'Tragende Wand',
-    text: 'Umbau mit Stahltrager und ruhiger Optik danach.',
-    before: '/images/projects/steel-beam-before.webp',
-    after: '/images/projects/steel-beam-after.webp',
-  },
-  {
-    title: 'Duschkabine',
-    text: 'Vorher improvisiert, nachher ordentlich montiert.',
-    before: '/images/projects/shower-before.webp',
-    after: '/images/projects/shower-after.webp',
-  },
-]
-
-const portraits = [
-  {
-    title: 'Auf der Baustelle',
-    image: '/images/people/arsen-helmet-blue.webp',
-  },
-  {
-    title: 'Kuechen & Feinheit',
-    image: '/images/people/arsen-kitchen.webp',
-  },
-  {
-    title: 'Planung mit Stil',
-    image: '/images/people/arsen-suit.webp',
-  },
-]
-
-const gallery = [
-  {
-    title: 'Framing',
-    image: '/images/projects/steel-beam-after.webp',
-  },
-  {
-    title: 'Fenster',
-    image: '/images/projects/window-after.webp',
-  },
-  {
-    title: 'Schimmel',
-    image: '/images/projects/mold-after.webp',
-  },
-  {
-    title: 'Montage',
-    image: '/images/people/arsen-brick.webp',
-  },
-]
-
-const contactItems = [
-  { label: 'Telefon', value: '0209 972 31 54', href: 'tel:+492099723154' },
-  { label: 'Mobil', value: '0178 166 16 15', href: 'tel:+491781661615' },
-  { label: 'Mail', value: 'info@hs-am.de', href: 'mailto:info@hs-am.de' },
-  {
-    label: 'Ort',
-    value: '45883 Gelsenkirchen',
-    href: 'https://www.google.com/maps/search/?api=1&query=45883+Gelsenkirchen',
-  },
-]
-
-const renderGridCard = ({ title, note, image, accent, span }) => `
-  <article class="service-card ${span ? `service-card--${span}` : ''}">
-    <img class="service-card__image" src="${image}" alt="${title}" loading="lazy" />
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=[`Fenster`,`Turen`,`Kueche`,`Bad`,`Boden`,`Waende`,`Schimmel`,`Wasserschaden`,`Montage`],t=[{title:`Seit 2006`,text:`20 Jahre saubere Arbeit auf echten Baustellen`},{title:`Arsen vor Ort`,text:`kein Vermittler, kein Callcenter, nur der Macher selbst`},{title:`Alles aus einer Hand`,text:`Fenster, Waende, Boeden, Feuchte und Montage`}],n=[{title:`Fenster & Turen`,note:`Einbau, Austausch und saubere Abschluesse`,image:`/images/people/arsen-workshop.webp`,accent:`Montage`,span:`wide`},{title:`Bad & Fliesen`,note:`Saubere Fliesen, Fugen und klare Kanten`,image:`/images/projects/tiles-after.webp`,accent:`Fliesen`},{title:`Waende & Ausbau`,note:`Trockenbau, Rigips und klare Linien`,image:`/images/people/arsen-framing.webp`,accent:`Struktur`},{title:`Schimmel & Feuchte`,note:`Schaden raus, Raum wieder ruhig`,image:`/images/projects/mold-after.webp`,accent:`Sanierung`,span:`tall`},{title:`Boeden & Belage`,note:`PVC, Linoleum, Laminat und Kanten, die sitzen`,image:`/images/people/arsen-kitchen.webp`,accent:`Boden`},{title:`Umbau & Details`,note:`Kleine Arbeiten mit grossem Unterschied`,image:`/images/people/arsen-pro.webp`,accent:`Ausbau`}],r=[{title:`Wasserschaden`,text:`Sauber aufgeraumt, neu aufgebaut, wieder wohnbar.`,before:`/images/projects/water-damage-before.webp`,after:`/images/projects/water-damage-after.webp`},{title:`Tragende Wand`,text:`Umbau mit Stahltrager und ruhiger Optik danach.`,before:`/images/projects/steel-beam-before.webp`,after:`/images/projects/steel-beam-after.webp`},{title:`Duschkabine`,text:`Vorher improvisiert, nachher ordentlich montiert.`,before:`/images/projects/shower-before.webp`,after:`/images/projects/shower-after.webp`}],i=[{title:`Auf der Baustelle`,image:`/images/people/arsen-helmet-blue.webp`},{title:`Kuechen & Feinheit`,image:`/images/people/arsen-kitchen.webp`},{title:`Planung mit Stil`,image:`/images/people/arsen-suit.webp`}],a=[{title:`Framing`,image:`/images/projects/steel-beam-after.webp`},{title:`Fenster`,image:`/images/projects/window-after.webp`},{title:`Schimmel`,image:`/images/projects/mold-after.webp`},{title:`Montage`,image:`/images/people/arsen-brick.webp`}],o=[{label:`Telefon`,value:`0209 972 31 54`,href:`tel:+492099723154`},{label:`Mobil`,value:`0178 166 16 15`,href:`tel:+491781661615`},{label:`Mail`,value:`info@hs-am.de`,href:`mailto:info@hs-am.de`},{label:`Ort`,value:`45883 Gelsenkirchen`,href:`https://www.google.com/maps/search/?api=1&query=45883+Gelsenkirchen`}],s=({title:e,note:t,image:n,accent:r,span:i})=>`
+  <article class="service-card ${i?`service-card--${i}`:``}">
+    <img class="service-card__image" src="${n}" alt="${e}" loading="lazy" />
     <div class="service-card__overlay">
-      <span class="service-card__accent">${accent}</span>
-      <h3>${title}</h3>
-      <p>${note}</p>
+      <span class="service-card__accent">${r}</span>
+      <h3>${e}</h3>
+      <p>${t}</p>
     </div>
   </article>
-`
-
-const renderStory = ({ title, text, before, after }) => `
+`,c=({title:e,text:t,before:n,after:r})=>`
   <article class="story-card">
     <div class="story-card__head">
       <span class="eyebrow">Vorher / Nachher</span>
-      <h3>${title}</h3>
-      <p>${text}</p>
+      <h3>${e}</h3>
+      <p>${t}</p>
     </div>
     <div class="story-card__media">
       <figure>
-        <img src="${before}" alt="${title} vorher" loading="lazy" />
+        <img src="${n}" alt="${e} vorher" loading="lazy" />
         <figcaption>Vorher</figcaption>
       </figure>
       <figure>
-        <img src="${after}" alt="${title} nachher" loading="lazy" />
+        <img src="${r}" alt="${e} nachher" loading="lazy" />
         <figcaption>Nachher</figcaption>
       </figure>
     </div>
   </article>
-`
-
-const renderPortrait = ({ title, image }) => `
+`,l=({title:e,image:t})=>`
   <article class="portrait-card">
-    <img src="${image}" alt="${title}" loading="lazy" />
-    <div class="portrait-card__label">${title}</div>
+    <img src="${t}" alt="${e}" loading="lazy" />
+    <div class="portrait-card__label">${e}</div>
   </article>
-`
-
-const renderGalleryItem = ({ title, image }) => `
+`,u=({title:e,image:t})=>`
   <article class="gallery-card">
-    <img src="${image}" alt="${title}" loading="lazy" />
-    <div class="gallery-card__label">${title}</div>
+    <img src="${t}" alt="${e}" loading="lazy" />
+    <div class="gallery-card__label">${e}</div>
   </article>
-`
-
-const renderContactItem = ({ label, value, href }) => {
-  if (href.startsWith('http')) {
-    return `
-      <a class="contact-card" href="${href}" target="_blank" rel="noreferrer">
-        <span>${label}</span>
-        <strong>${value}</strong>
+`,d=({label:e,value:t,href:n})=>n.startsWith(`http`)?`
+      <a class="contact-card" href="${n}" target="_blank" rel="noreferrer">
+        <span>${e}</span>
+        <strong>${t}</strong>
       </a>
-    `
-  }
-
-  return `
-    <a class="contact-card" href="${href}">
-      <span>${label}</span>
-      <strong>${value}</strong>
+    `:`
+    <a class="contact-card" href="${n}">
+      <span>${e}</span>
+      <strong>${t}</strong>
     </a>
-  `
-}
-
-document.querySelector('#app').innerHTML = `
+  `;document.querySelector(`#app`).innerHTML=`
   <div class="page">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="HS-AM Startseite">
@@ -224,19 +72,15 @@ document.querySelector('#app').innerHTML = `
             <a class="button button--ghost" href="#arbeiten">Bilder ansehen</a>
           </div>
           <div class="hero__chips" aria-label="Kernleistungen">
-            ${quickTags.map((tag) => `<span>${tag}</span>`).join('')}
+            ${e.map(e=>`<span>${e}</span>`).join(``)}
           </div>
           <div class="hero__facts" aria-label="Erfahrung und Qualitaet">
-            ${experienceFacts
-              .map(
-                (fact) => `
+            ${t.map(e=>`
                   <article class="hero-fact">
-                    <span>${fact.title}</span>
-                    <strong>${fact.text}</strong>
+                    <span>${e.title}</span>
+                    <strong>${e.text}</strong>
                   </article>
-                `,
-              )
-              .join('')}
+                `).join(``)}
           </div>
         </div>
 
@@ -267,7 +111,7 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section section--tight">
         <div class="tag-marquee" aria-label="Leistungsbereiche">
-          ${quickTags.map((tag) => `<span>${tag}</span>`).join('')}
+          ${e.map(e=>`<span>${e}</span>`).join(``)}
         </div>
       </section>
 
@@ -278,7 +122,7 @@ document.querySelector('#app').innerHTML = `
           <p>Die Seite zeigt direkt, was HS-AM macht, ohne sich in Text zu verlieren.</p>
         </div>
         <div class="service-grid">
-          ${serviceCards.map(renderGridCard).join('')}
+          ${n.map(s).join(``)}
         </div>
       </section>
 
@@ -289,7 +133,7 @@ document.querySelector('#app').innerHTML = `
           <p>Diese Referenzen stammen aus der alten Seite und tragen den neuen Look jetzt mit.</p>
         </div>
         <div class="story-grid">
-          ${stories.map(renderStory).join('')}
+          ${r.map(c).join(``)}
         </div>
       </section>
 
@@ -304,7 +148,7 @@ document.querySelector('#app').innerHTML = `
           </p>
         </div>
         <div class="portrait-grid">
-          ${portraits.map(renderPortrait).join('')}
+          ${i.map(l).join(``)}
         </div>
       </section>
 
@@ -315,7 +159,7 @@ document.querySelector('#app').innerHTML = `
           <p>Genau die Richtung, die du mit Grove gemeint hast.</p>
         </div>
         <div class="gallery-grid">
-          ${gallery.map(renderGalleryItem).join('')}
+          ${a.map(u).join(``)}
         </div>
       </section>
 
@@ -330,7 +174,7 @@ document.querySelector('#app').innerHTML = `
             </p>
           </div>
           <div class="contact-grid">
-            ${contactItems.map(renderContactItem).join('')}
+            ${o.map(d).join(``)}
           </div>
         </div>
       </section>
@@ -352,4 +196,4 @@ document.querySelector('#app').innerHTML = `
 
     <a class="mobile-call" href="tel:+492099723154">Anrufen</a>
   </div>
-`
+`;

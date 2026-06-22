@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 104" fill="none" role="img" aria-labelledby="title desc">
+  <title>HS-AM Logo</title>
+  <desc>HS-AM wordmark with an abstract house mark.</desc>
+  <rect x="2" y="2" width="100" height="100" rx="0" fill="#241d17"/>
+  <path d="M24 54.5 51 30 78 54.5" stroke="#E3C18A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 54.5V77h38V54.5" stroke="#F7F0E6" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31 54.5H69" stroke="#F7F0E6" stroke-width="6" stroke-linecap="round"/>
+  <text x="126" y="45" fill="#241d17" font-family="Montserrat, Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="4">HS-AM</text>
+  <text x="126" y="78" fill="#6F6257" font-family="Montserrat, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="0.6">
+    Heimwerker Service Arsen Movsisyan
+  </text>
+</svg>
