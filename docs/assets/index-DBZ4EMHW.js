@@ -1,4 +1,4 @@
-(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=[`Fenster`,`Turen`,`Kueche`,`Bad`,`Boden`,`Waende`,`Schimmel`,`Wasserschaden`,`Montage`],t=[{title:`Seit 2006`,text:`20 Jahre saubere Arbeit auf echten Baustellen`},{title:`Arsen vor Ort`,text:`kein Vermittler, kein Callcenter, nur der Macher selbst`},{title:`Alles aus einer Hand`,text:`Fenster, Waende, Boeden, Feuchte und Montage`}],n=[{title:`Fenster & Turen`,note:`Einbau, Austausch und saubere Abschluesse`,image:`/images/people/arsen-workshop.webp`,accent:`Montage`,span:`wide`},{title:`Bad & Fliesen`,note:`Saubere Fliesen, Fugen und klare Kanten`,image:`/images/projects/tiles-after.webp`,accent:`Fliesen`},{title:`Waende & Ausbau`,note:`Trockenbau, Rigips und klare Linien`,image:`/images/people/arsen-framing.webp`,accent:`Struktur`},{title:`Schimmel & Feuchte`,note:`Schaden raus, Raum wieder ruhig`,image:`/images/projects/mold-after.webp`,accent:`Sanierung`,span:`tall`},{title:`Boeden & Belage`,note:`PVC, Linoleum, Laminat und Kanten, die sitzen`,image:`/images/people/arsen-kitchen.webp`,accent:`Boden`},{title:`Umbau & Details`,note:`Kleine Arbeiten mit grossem Unterschied`,image:`/images/people/arsen-pro.webp`,accent:`Ausbau`}],r=[{title:`Wasserschaden`,text:`Sauber aufgeraumt, neu aufgebaut, wieder wohnbar.`,before:`/images/projects/water-damage-before.webp`,after:`/images/projects/water-damage-after.webp`},{title:`Tragende Wand`,text:`Umbau mit Stahltrager und ruhiger Optik danach.`,before:`/images/projects/steel-beam-before.webp`,after:`/images/projects/steel-beam-after.webp`},{title:`Duschkabine`,text:`Vorher improvisiert, nachher ordentlich montiert.`,before:`/images/projects/shower-before.webp`,after:`/images/projects/shower-after.webp`}],i=[{title:`Auf der Baustelle`,image:`/images/people/arsen-helmet-blue.webp`},{title:`Kuechen & Feinheit`,image:`/images/people/arsen-kitchen.webp`},{title:`Planung mit Stil`,image:`/images/people/arsen-suit.webp`}],a=[{title:`Framing`,image:`/images/projects/steel-beam-after.webp`},{title:`Fenster`,image:`/images/projects/window-after.webp`},{title:`Schimmel`,image:`/images/projects/mold-after.webp`},{title:`Montage`,image:`/images/people/arsen-brick.webp`}],o=[{label:`Telefon`,value:`0209 972 31 54`,href:`tel:+492099723154`},{label:`Mobil`,value:`0178 166 16 15`,href:`tel:+491781661615`},{label:`Mail`,value:`info@hs-am.de`,href:`mailto:info@hs-am.de`},{label:`Ort`,value:`45883 Gelsenkirchen`,href:`https://www.google.com/maps/search/?api=1&query=45883+Gelsenkirchen`}],s=({title:e,note:t,image:n,accent:r,span:i})=>`
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin===`use-credentials`?t.credentials=`include`:e.crossOrigin===`anonymous`?t.credentials=`omit`:t.credentials=`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();var e=e=>`./${e}`,t=[`Fenster`,`Turen`,`Kueche`,`Bad`,`Boden`,`Waende`,`Schimmel`,`Wasserschaden`,`Montage`],n=[{title:`Seit 2006`,text:`20 Jahre saubere Arbeit auf echten Baustellen`},{title:`Arsen vor Ort`,text:`kein Vermittler, kein Callcenter, nur der Macher selbst`},{title:`Alles aus einer Hand`,text:`Fenster, Waende, Boeden, Feuchte und Montage`}],r=[{title:`Fenster & Turen`,note:`Einbau, Austausch und saubere Abschluesse`,image:e(`images/people/arsen-workshop.webp`),accent:`Montage`,span:`wide`},{title:`Bad & Fliesen`,note:`Saubere Fliesen, Fugen und klare Kanten`,image:e(`images/projects/tiles-after.webp`),accent:`Fliesen`},{title:`Waende & Ausbau`,note:`Trockenbau, Rigips und klare Linien`,image:e(`images/people/arsen-framing.webp`),accent:`Struktur`},{title:`Schimmel & Feuchte`,note:`Schaden raus, Raum wieder ruhig`,image:e(`images/projects/mold-after.webp`),accent:`Sanierung`,span:`tall`},{title:`Boeden & Belage`,note:`PVC, Linoleum, Laminat und Kanten, die sitzen`,image:e(`images/people/arsen-kitchen.webp`),accent:`Boden`},{title:`Umbau & Details`,note:`Kleine Arbeiten mit grossem Unterschied`,image:e(`images/people/arsen-pro.webp`),accent:`Ausbau`}],i=[{title:`Wasserschaden`,text:`Sauber aufgeraumt, neu aufgebaut, wieder wohnbar.`,before:e(`images/projects/water-damage-before.webp`),after:e(`images/projects/water-damage-after.webp`)},{title:`Tragende Wand`,text:`Umbau mit Stahltrager und ruhiger Optik danach.`,before:e(`images/projects/steel-beam-before.webp`),after:e(`images/projects/steel-beam-after.webp`)},{title:`Duschkabine`,text:`Vorher improvisiert, nachher ordentlich montiert.`,before:e(`images/projects/shower-before.webp`),after:e(`images/projects/shower-after.webp`)}],a=[{title:`Auf der Baustelle`,image:e(`images/people/arsen-helmet-blue.webp`)},{title:`Kuechen & Feinheit`,image:e(`images/people/arsen-kitchen.webp`)},{title:`Planung mit Stil`,image:e(`images/people/arsen-suit.webp`)}],o=[{title:`Framing`,image:e(`images/projects/steel-beam-after.webp`)},{title:`Fenster`,image:e(`images/projects/window-after.webp`)},{title:`Schimmel`,image:e(`images/projects/mold-after.webp`)},{title:`Montage`,image:e(`images/people/arsen-brick.webp`)}],s=[{label:`Telefon`,value:`0209 972 31 54`,href:`tel:+492099723154`},{label:`Mobil`,value:`0178 166 16 15`,href:`tel:+491781661615`},{label:`Mail`,value:`info@hs-am.de`,href:`mailto:info@hs-am.de`},{label:`Ort`,value:`45883 Gelsenkirchen`,href:`https://www.google.com/maps/search/?api=1&query=45883+Gelsenkirchen`}],c=({title:e,note:t,image:n,accent:r,span:i})=>`
   <article class="service-card ${i?`service-card--${i}`:``}">
     <img class="service-card__image" src="${n}" alt="${e}" loading="lazy" />
     <div class="service-card__overlay">
@@ -7,7 +7,7 @@
       <p>${t}</p>
     </div>
   </article>
-`,c=({title:e,text:t,before:n,after:r})=>`
+`,l=({title:e,text:t,before:n,after:r})=>`
   <article class="story-card">
     <div class="story-card__head">
       <span class="eyebrow">Vorher / Nachher</span>
@@ -25,17 +25,17 @@
       </figure>
     </div>
   </article>
-`,l=({title:e,image:t})=>`
+`,u=({title:e,image:t})=>`
   <article class="portrait-card">
     <img src="${t}" alt="${e}" loading="lazy" />
     <div class="portrait-card__label">${e}</div>
   </article>
-`,u=({title:e,image:t})=>`
+`,d=({title:e,image:t})=>`
   <article class="gallery-card">
     <img src="${t}" alt="${e}" loading="lazy" />
     <div class="gallery-card__label">${e}</div>
   </article>
-`,d=({label:e,value:t,href:n})=>n.startsWith(`http`)?`
+`,f=({label:e,value:t,href:n})=>n.startsWith(`http`)?`
       <a class="contact-card" href="${n}" target="_blank" rel="noreferrer">
         <span>${e}</span>
         <strong>${t}</strong>
@@ -49,7 +49,7 @@
   <div class="page">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="HS-AM Startseite">
-        <img class="brand__mark" src="/hs-am-logo.svg" alt="HS-AM" />
+        <img class="brand__mark" src="${e(`hs-am-logo.svg`)}" alt="HS-AM" />
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
@@ -72,10 +72,10 @@
             <a class="button button--ghost" href="#arbeiten">Bilder ansehen</a>
           </div>
           <div class="hero__chips" aria-label="Kernleistungen">
-            ${e.map(e=>`<span>${e}</span>`).join(``)}
+            ${t.map(e=>`<span>${e}</span>`).join(``)}
           </div>
           <div class="hero__facts" aria-label="Erfahrung und Qualitaet">
-            ${t.map(e=>`
+            ${n.map(e=>`
                   <article class="hero-fact">
                     <span>${e.title}</span>
                     <strong>${e.text}</strong>
@@ -86,21 +86,21 @@
 
         <div class="hero__visual">
           <article class="hero-tile hero-tile--large">
-            <img src="/images/people/arsen-workshop.webp" alt="Arsen im Renovierungsraum" loading="eager" />
+            <img src="${e(`images/people/arsen-workshop.webp`)}" alt="Arsen im Renovierungsraum" loading="eager" />
             <div class="hero-tile__caption">
               <span>Vor Ort</span>
               <strong>Saubere Arbeit. Ruhige Baustellen.</strong>
             </div>
           </article>
           <article class="hero-tile hero-tile--small hero-tile--warm">
-            <img src="/images/people/arsen-kitchen.webp" alt="Arsen in der Kueche" loading="lazy" />
+            <img src="${e(`images/people/arsen-kitchen.webp`)}" alt="Arsen in der Kueche" loading="lazy" />
             <div class="hero-tile__caption">
               <span>Innenausbau</span>
               <strong>Details, die direkt fertig wirken.</strong>
             </div>
           </article>
           <article class="hero-tile hero-tile--small">
-            <img src="/images/projects/window-after.webp" alt="Erneuertes Fenster" loading="lazy" />
+            <img src="${e(`images/projects/window-after.webp`)}" alt="Erneuertes Fenster" loading="lazy" />
             <div class="hero-tile__caption">
               <span>Vorher / Nachher</span>
               <strong>Der Unterschied ist sofort sichtbar.</strong>
@@ -111,7 +111,7 @@
 
       <section class="section section--tight">
         <div class="tag-marquee" aria-label="Leistungsbereiche">
-          ${e.map(e=>`<span>${e}</span>`).join(``)}
+          ${t.map(e=>`<span>${e}</span>`).join(``)}
         </div>
       </section>
 
@@ -122,7 +122,7 @@
           <p>Die Seite zeigt direkt, was HS-AM macht, ohne sich in Text zu verlieren.</p>
         </div>
         <div class="service-grid">
-          ${n.map(s).join(``)}
+          ${r.map(c).join(``)}
         </div>
       </section>
 
@@ -133,7 +133,7 @@
           <p>Diese Referenzen stammen aus der alten Seite und tragen den neuen Look jetzt mit.</p>
         </div>
         <div class="story-grid">
-          ${r.map(c).join(``)}
+          ${i.map(l).join(``)}
         </div>
       </section>
 
@@ -148,7 +148,7 @@
           </p>
         </div>
         <div class="portrait-grid">
-          ${i.map(l).join(``)}
+          ${a.map(u).join(``)}
         </div>
       </section>
 
@@ -159,7 +159,7 @@
           <p>Genau die Richtung, die du mit Grove gemeint hast.</p>
         </div>
         <div class="gallery-grid">
-          ${a.map(u).join(``)}
+          ${o.map(d).join(``)}
         </div>
       </section>
 
@@ -174,7 +174,7 @@
             </p>
           </div>
           <div class="contact-grid">
-            ${o.map(d).join(``)}
+            ${s.map(f).join(``)}
           </div>
         </div>
       </section>
@@ -182,7 +182,7 @@
 
     <footer class="site-footer">
       <div class="site-footer__brand">
-        <img src="/hs-am-logo.svg" alt="HS-AM" />
+        <img src="${e(`hs-am-logo.svg`)}" alt="HS-AM" />
       </div>
       <div class="site-footer__meta">
         <p>Heimwerker Service Arsen Movsisyan</p>

@@ -1,5 +1,7 @@
 import './style.css'
 
+const asset = (path) => `${import.meta.env.BASE_URL}${path}`
+
 const quickTags = [
   'Fenster',
   'Turen',
@@ -31,39 +33,39 @@ const serviceCards = [
   {
     title: 'Fenster & Turen',
     note: 'Einbau, Austausch und saubere Abschluesse',
-    image: '/images/people/arsen-workshop.webp',
+    image: asset('images/people/arsen-workshop.webp'),
     accent: 'Montage',
     span: 'wide',
   },
   {
     title: 'Bad & Fliesen',
     note: 'Saubere Fliesen, Fugen und klare Kanten',
-    image: '/images/projects/tiles-after.webp',
+    image: asset('images/projects/tiles-after.webp'),
     accent: 'Fliesen',
   },
   {
     title: 'Waende & Ausbau',
     note: 'Trockenbau, Rigips und klare Linien',
-    image: '/images/people/arsen-framing.webp',
+    image: asset('images/people/arsen-framing.webp'),
     accent: 'Struktur',
   },
   {
     title: 'Schimmel & Feuchte',
     note: 'Schaden raus, Raum wieder ruhig',
-    image: '/images/projects/mold-after.webp',
+    image: asset('images/projects/mold-after.webp'),
     accent: 'Sanierung',
     span: 'tall',
   },
   {
     title: 'Boeden & Belage',
     note: 'PVC, Linoleum, Laminat und Kanten, die sitzen',
-    image: '/images/people/arsen-kitchen.webp',
+    image: asset('images/people/arsen-kitchen.webp'),
     accent: 'Boden',
   },
   {
     title: 'Umbau & Details',
     note: 'Kleine Arbeiten mit grossem Unterschied',
-    image: '/images/people/arsen-pro.webp',
+    image: asset('images/people/arsen-pro.webp'),
     accent: 'Ausbau',
   },
 ]
@@ -72,54 +74,54 @@ const stories = [
   {
     title: 'Wasserschaden',
     text: 'Sauber aufgeraumt, neu aufgebaut, wieder wohnbar.',
-    before: '/images/projects/water-damage-before.webp',
-    after: '/images/projects/water-damage-after.webp',
+    before: asset('images/projects/water-damage-before.webp'),
+    after: asset('images/projects/water-damage-after.webp'),
   },
   {
     title: 'Tragende Wand',
     text: 'Umbau mit Stahltrager und ruhiger Optik danach.',
-    before: '/images/projects/steel-beam-before.webp',
-    after: '/images/projects/steel-beam-after.webp',
+    before: asset('images/projects/steel-beam-before.webp'),
+    after: asset('images/projects/steel-beam-after.webp'),
   },
   {
     title: 'Duschkabine',
     text: 'Vorher improvisiert, nachher ordentlich montiert.',
-    before: '/images/projects/shower-before.webp',
-    after: '/images/projects/shower-after.webp',
+    before: asset('images/projects/shower-before.webp'),
+    after: asset('images/projects/shower-after.webp'),
   },
 ]
 
 const portraits = [
   {
     title: 'Auf der Baustelle',
-    image: '/images/people/arsen-helmet-blue.webp',
+    image: asset('images/people/arsen-helmet-blue.webp'),
   },
   {
     title: 'Kuechen & Feinheit',
-    image: '/images/people/arsen-kitchen.webp',
+    image: asset('images/people/arsen-kitchen.webp'),
   },
   {
     title: 'Planung mit Stil',
-    image: '/images/people/arsen-suit.webp',
+    image: asset('images/people/arsen-suit.webp'),
   },
 ]
 
 const gallery = [
   {
     title: 'Framing',
-    image: '/images/projects/steel-beam-after.webp',
+    image: asset('images/projects/steel-beam-after.webp'),
   },
   {
     title: 'Fenster',
-    image: '/images/projects/window-after.webp',
+    image: asset('images/projects/window-after.webp'),
   },
   {
     title: 'Schimmel',
-    image: '/images/projects/mold-after.webp',
+    image: asset('images/projects/mold-after.webp'),
   },
   {
     title: 'Montage',
-    image: '/images/people/arsen-brick.webp',
+    image: asset('images/people/arsen-brick.webp'),
   },
 ]
 
@@ -201,7 +203,7 @@ document.querySelector('#app').innerHTML = `
   <div class="page">
     <header class="site-header">
       <a class="brand" href="#top" aria-label="HS-AM Startseite">
-        <img class="brand__mark" src="/hs-am-logo.svg" alt="HS-AM" />
+        <img class="brand__mark" src="${asset('hs-am-logo.svg')}" alt="HS-AM" />
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
@@ -242,21 +244,21 @@ document.querySelector('#app').innerHTML = `
 
         <div class="hero__visual">
           <article class="hero-tile hero-tile--large">
-            <img src="/images/people/arsen-workshop.webp" alt="Arsen im Renovierungsraum" loading="eager" />
+            <img src="${asset('images/people/arsen-workshop.webp')}" alt="Arsen im Renovierungsraum" loading="eager" />
             <div class="hero-tile__caption">
               <span>Vor Ort</span>
               <strong>Saubere Arbeit. Ruhige Baustellen.</strong>
             </div>
           </article>
           <article class="hero-tile hero-tile--small hero-tile--warm">
-            <img src="/images/people/arsen-kitchen.webp" alt="Arsen in der Kueche" loading="lazy" />
+            <img src="${asset('images/people/arsen-kitchen.webp')}" alt="Arsen in der Kueche" loading="lazy" />
             <div class="hero-tile__caption">
               <span>Innenausbau</span>
               <strong>Details, die direkt fertig wirken.</strong>
             </div>
           </article>
           <article class="hero-tile hero-tile--small">
-            <img src="/images/projects/window-after.webp" alt="Erneuertes Fenster" loading="lazy" />
+            <img src="${asset('images/projects/window-after.webp')}" alt="Erneuertes Fenster" loading="lazy" />
             <div class="hero-tile__caption">
               <span>Vorher / Nachher</span>
               <strong>Der Unterschied ist sofort sichtbar.</strong>
@@ -338,7 +340,7 @@ document.querySelector('#app').innerHTML = `
 
     <footer class="site-footer">
       <div class="site-footer__brand">
-        <img src="/hs-am-logo.svg" alt="HS-AM" />
+        <img src="${asset('hs-am-logo.svg')}" alt="HS-AM" />
       </div>
       <div class="site-footer__meta">
         <p>Heimwerker Service Arsen Movsisyan</p>
