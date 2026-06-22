@@ -2,7 +2,7 @@ import './style.css'
 
 const asset = (path) => `${import.meta.env.BASE_URL}${path}`
 
-const quickTags = [
+const servicePills = [
   'Fenster',
   'Turen',
   'Kueche',
@@ -20,8 +20,8 @@ const experienceFacts = [
     text: '20 Jahre saubere Arbeit auf echten Baustellen',
   },
   {
-    title: 'Arsen vor Ort',
-    text: 'kein Vermittler, kein Callcenter, nur der Macher selbst',
+    title: 'Direkter Kontakt',
+    text: 'Du sprichst direkt mit Arsen, nicht mit einer Hotline',
   },
   {
     title: 'Alles aus einer Hand',
@@ -32,60 +32,93 @@ const experienceFacts = [
 const serviceCards = [
   {
     title: 'Fenster & Turen',
-    note: 'Einbau, Austausch und saubere Abschluesse',
+    note: 'Einbauen, austauschen und sauber einstellen.',
     image: asset('images/people/arsen-workshop.webp'),
     accent: 'Montage',
-    span: 'wide',
-  },
-  {
-    title: 'Bad & Fliesen',
-    note: 'Saubere Fliesen, Fugen und klare Kanten',
-    image: asset('images/projects/tiles-after.webp'),
-    accent: 'Fliesen',
   },
   {
     title: 'Waende & Ausbau',
-    note: 'Trockenbau, Rigips und klare Linien',
+    note: 'Trockenbau, Durchbrueche und klare Linien.',
     image: asset('images/people/arsen-framing.webp'),
-    accent: 'Struktur',
+    accent: 'Ausbau',
   },
   {
-    title: 'Schimmel & Feuchte',
-    note: 'Schaden raus, Raum wieder ruhig',
-    image: asset('images/projects/mold-after.webp'),
-    accent: 'Sanierung',
-    span: 'tall',
-  },
-  {
-    title: 'Boeden & Belage',
-    note: 'PVC, Linoleum, Laminat und Kanten, die sitzen',
-    image: asset('images/people/arsen-kitchen.webp'),
+    title: 'Boden & Fliesen',
+    note: 'Neuer Belag, ruhige Fugen, sauberer Abschluss.',
+    image: asset('images/projects/tiles-after.webp'),
     accent: 'Boden',
   },
   {
-    title: 'Umbau & Details',
-    note: 'Kleine Arbeiten mit grossem Unterschied',
+    title: 'Bad & Kueche',
+    note: 'Montage, Anschluesse und Feinarbeit.',
+    image: asset('images/people/arsen-kitchen.webp'),
+    accent: 'Innenraum',
+  },
+  {
+    title: 'Feuchte & Schimmel',
+    note: 'Schnell raus damit, damit der Raum wieder stimmt.',
+    image: asset('images/projects/mold-after.webp'),
+    accent: 'Sanierung',
+  },
+  {
+    title: 'Kleinauftraege',
+    note: 'Auch die kleinen Jobs werden ordentlich fertig.',
     image: asset('images/people/arsen-pro.webp'),
-    accent: 'Ausbau',
+    accent: 'Service',
+  },
+]
+
+const processSteps = [
+  {
+    number: '01',
+    title: 'Kurz anrufen',
+    text: 'Du schilderst kurz, was ansteht. Arsen hoert zu und sagt dir direkt, ob es passt.',
+  },
+  {
+    number: '02',
+    title: 'Foto oder Besichtigung',
+    text: 'Wenn du willst, schickst du ein Bild per Mail oder wir schauen vor Ort drauf.',
+  },
+  {
+    number: '03',
+    title: 'Sauber fertig machen',
+    text: 'Wenn es losgeht, wird es ordentlich gemacht. Ohne Theater, ohne Umwege.',
+  },
+]
+
+const videoStories = [
+  {
+    kicker: 'Video 01',
+    title: 'Arsen auf der Baustelle',
+    note: 'Direkter Eindruck, echte Arbeit, kein gestelltes Gerede. Tippen zum Abspielen.',
+    poster: asset('images/people/arsen-workshop.webp'),
+    src: asset('videos/arsen-hsam-01.mp4'),
+  },
+  {
+    kicker: 'Video 02',
+    title: 'Montage und Innenausbau',
+    note: 'So sieht es aus, wenn etwas sauber abgeschlossen wird. Tippen zum Abspielen.',
+    poster: asset('images/people/arsen-kitchen.webp'),
+    src: asset('videos/arsen-hsam-02.mp4'),
   },
 ]
 
 const stories = [
   {
     title: 'Wasserschaden',
-    text: 'Sauber aufgeraumt, neu aufgebaut, wieder wohnbar.',
+    text: 'Wieder trocken, wieder ordentlich, wieder nutzbar.',
     before: asset('images/projects/water-damage-before.webp'),
     after: asset('images/projects/water-damage-after.webp'),
   },
   {
     title: 'Tragende Wand',
-    text: 'Umbau mit Stahltrager und ruhiger Optik danach.',
+    text: 'Ein Umbau, bei dem die Technik nachher verschwindet.',
     before: asset('images/projects/steel-beam-before.webp'),
     after: asset('images/projects/steel-beam-after.webp'),
   },
   {
     title: 'Duschkabine',
-    text: 'Vorher improvisiert, nachher ordentlich montiert.',
+    text: 'Sauber montiert, klar abgeschlossen.',
     before: asset('images/projects/shower-before.webp'),
     after: asset('images/projects/shower-after.webp'),
   },
@@ -93,35 +126,16 @@ const stories = [
 
 const portraits = [
   {
-    title: 'Auf der Baustelle',
+    title: 'Arsen vor Ort',
     image: asset('images/people/arsen-helmet-blue.webp'),
   },
   {
-    title: 'Kuechen & Feinheit',
+    title: 'Ruhig im Innenausbau',
     image: asset('images/people/arsen-kitchen.webp'),
   },
   {
-    title: 'Planung mit Stil',
+    title: 'Planung und Blick fuer Details',
     image: asset('images/people/arsen-suit.webp'),
-  },
-]
-
-const gallery = [
-  {
-    title: 'Framing',
-    image: asset('images/projects/steel-beam-after.webp'),
-  },
-  {
-    title: 'Fenster',
-    image: asset('images/projects/window-after.webp'),
-  },
-  {
-    title: 'Schimmel',
-    image: asset('images/projects/mold-after.webp'),
-  },
-  {
-    title: 'Montage',
-    image: asset('images/people/arsen-brick.webp'),
   },
 ]
 
@@ -136,11 +150,47 @@ const contactItems = [
   },
 ]
 
-const renderGridCard = ({ title, note, image, accent, span }) => `
-  <article class="service-card ${span ? `service-card--${span}` : ''}">
-    <img class="service-card__image" src="${image}" alt="${title}" loading="lazy" />
-    <div class="service-card__overlay">
+const renderFact = ({ title, text }) => `
+  <article class="hero-fact">
+    <span>${title}</span>
+    <strong>${text}</strong>
+  </article>
+`
+
+const renderServiceCard = ({ title, note, image, accent }) => `
+  <article class="service-card">
+    <div class="service-card__media">
+      <img class="service-card__image" src="${image}" alt="${title}" loading="lazy" />
+    </div>
+    <div class="service-card__copy">
       <span class="service-card__accent">${accent}</span>
+      <h3>${title}</h3>
+      <p>${note}</p>
+    </div>
+  </article>
+`
+
+const renderProcessCard = ({ number, title, text }) => `
+  <article class="process-card">
+    <span class="process-card__number">${number}</span>
+    <h3>${title}</h3>
+    <p>${text}</p>
+  </article>
+`
+
+const renderVideoCard = ({ kicker, title, note, poster, src }) => `
+  <article class="video-card">
+    <video
+      class="video-card__media"
+      muted
+      playsinline
+      preload="none"
+      poster="${poster}"
+      data-src="${src}"
+      aria-label="${title}"
+    ></video>
+    <div class="video-card__copy">
+      <span class="eyebrow">${kicker}</span>
       <h3>${title}</h3>
       <p>${note}</p>
     </div>
@@ -174,13 +224,6 @@ const renderPortrait = ({ title, image }) => `
   </article>
 `
 
-const renderGalleryItem = ({ title, image }) => `
-  <article class="gallery-card">
-    <img src="${image}" alt="${title}" loading="lazy" />
-    <div class="gallery-card__label">${title}</div>
-  </article>
-`
-
 const renderContactItem = ({ label, value, href }) => {
   if (href.startsWith('http')) {
     return `
@@ -207,6 +250,7 @@ document.querySelector('#app').innerHTML = `
       </a>
       <nav class="site-nav" aria-label="Hauptnavigation">
         <a href="#leistungen">Leistungen</a>
+        <a href="#videos">Videos</a>
         <a href="#arbeiten">Arbeiten</a>
         <a href="#kontakt">Kontakt</a>
       </nav>
@@ -217,78 +261,114 @@ document.querySelector('#app').innerHTML = `
       <section class="hero section">
         <div class="hero__copy">
           <p class="eyebrow">Heimwerker Service aus Gelsenkirchen</p>
-          <h1>Renovierung, Montage und Reparatur. Klar. Schnell. Fertig.</h1>
+          <h1>Renovierung. Montage. Reparatur. Sauber fertig gemacht.</h1>
           <p class="hero__lede">
-            Fenster, Turen, Waende, Boeden, Fliesen, Schimmel und Wasserschaden aus einer Hand.
+            Seit 2006 macht Arsen die Arbeit selbst. Wenn du etwas im Haus sauber gelost haben
+            willst, reicht ein Anruf oder eine kurze Mail mit Foto.
           </p>
           <div class="hero__actions">
-            <a class="button button--primary" href="tel:+492099723154">Jetzt anrufen</a>
-            <a class="button button--ghost" href="#arbeiten">Bilder ansehen</a>
+            <a class="button button--primary" href="tel:+492099723154">Arsen anrufen</a>
+            <a class="button button--ghost" href="mailto:info@hs-am.de?subject=HS-AM%20Anfrage">Foto
+            mailen</a>
           </div>
           <div class="hero__chips" aria-label="Kernleistungen">
-            ${quickTags.map((tag) => `<span>${tag}</span>`).join('')}
+            ${servicePills.map((tag) => `<span>${tag}</span>`).join('')}
           </div>
           <div class="hero__facts" aria-label="Erfahrung und Qualitaet">
             ${experienceFacts
-              .map(
-                (fact) => `
-                  <article class="hero-fact">
-                    <span>${fact.title}</span>
-                    <strong>${fact.text}</strong>
-                  </article>
-                `,
-              )
+              .map(renderFact)
               .join('')}
           </div>
         </div>
 
-        <div class="hero__visual">
-          <article class="hero-tile hero-tile--large">
-            <img src="${asset('images/people/arsen-workshop.webp')}" alt="Arsen im Renovierungsraum" loading="eager" />
-            <div class="hero-tile__caption">
+        <div class="hero__media">
+          <article class="media-card media-card--video">
+            <video
+              class="media-card__media"
+              muted
+              playsinline
+              preload="none"
+              poster="${asset('images/people/arsen-workshop.webp')}"
+              data-src="${asset('videos/arsen-hsam-01.mp4')}"
+              aria-label="Arsen auf der Baustelle"
+            ></video>
+            <div class="media-card__caption">
               <span>Vor Ort</span>
-              <strong>Saubere Arbeit. Ruhige Baustellen.</strong>
+              <strong>Arsen zeigt direkt, wie er arbeitet. Tippen zum Abspielen.</strong>
             </div>
           </article>
-          <article class="hero-tile hero-tile--small hero-tile--warm">
-            <img src="${asset('images/people/arsen-kitchen.webp')}" alt="Arsen in der Kueche" loading="lazy" />
-            <div class="hero-tile__caption">
+          <article class="media-card">
+            <img
+              class="media-card__media"
+              src="${asset('images/people/arsen-kitchen.webp')}"
+              alt="Arsen in der Kueche"
+              loading="eager"
+            />
+            <div class="media-card__caption">
               <span>Innenausbau</span>
-              <strong>Details, die direkt fertig wirken.</strong>
+              <strong>Saubere Montage. Ruhiger Abschluss.</strong>
             </div>
           </article>
-          <article class="hero-tile hero-tile--small">
-            <img src="${asset('images/projects/window-after.webp')}" alt="Erneuertes Fenster" loading="lazy" />
-            <div class="hero-tile__caption">
-              <span>Vorher / Nachher</span>
-              <strong>Der Unterschied ist sofort sichtbar.</strong>
+          <article class="media-card media-card--note">
+            <div class="media-card__note">
+              <span>Seit 2006</span>
+              <strong>Direkter Kontakt, klare Ansage und saubere Arbeit aus einer Hand.</strong>
             </div>
           </article>
-        </div>
-      </section>
-
-      <section class="section section--tight">
-        <div class="tag-marquee" aria-label="Leistungsbereiche">
-          ${quickTags.map((tag) => `<span>${tag}</span>`).join('')}
         </div>
       </section>
 
       <section id="leistungen" class="section">
         <div class="section-heading">
           <p class="eyebrow">Leistungen</p>
-          <h2>Weniger Erklaerung. Mehr echte Bilder.</h2>
-          <p>Die Seite zeigt direkt, was HS-AM macht, ohne sich in Text zu verlieren.</p>
+          <h2>Was Arsen macht. Klar und ohne Umwege.</h2>
+          <p>
+            Fenster, Tueren, Waende, Boden, Fliesen, Feuchte und die kleinen Dinge dazwischen.
+            Alles sauber durchgezogen.
+          </p>
         </div>
         <div class="service-grid">
-          ${serviceCards.map(renderGridCard).join('')}
+          ${serviceCards.map(renderServiceCard).join('')}
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Ablauf</p>
+            <h2>So laeuft es ab.</h2>
+          </div>
+          <p>
+            Kurz anrufen, kurz abklaeren, dann sauber ausfuehren. So bleibt es einfach und
+            angenehm fuer alle.
+          </p>
+        </div>
+        <div class="process-grid">
+          ${processSteps.map(renderProcessCard).join('')}
+        </div>
+      </section>
+
+      <section id="videos" class="section">
+        <div class="section-heading section-heading--split">
+          <div>
+            <p class="eyebrow">Videos</p>
+            <h2>So sieht das in echt aus.</h2>
+          </div>
+          <p>
+            Zwei kurze Clips mit echtem Baustellengefuehl. Kein Theater, kein Iframe, nur Arbeit,
+            die man direkt versteht.
+          </p>
+        </div>
+        <div class="video-grid">
+          ${videoStories.map(renderVideoCard).join('')}
         </div>
       </section>
 
       <section id="arbeiten" class="section">
         <div class="section-heading">
           <p class="eyebrow">Arbeiten</p>
-          <h2>Vorher. Nachher. Fertig.</h2>
-          <p>Diese Referenzen stammen aus der alten Seite und tragen den neuen Look jetzt mit.</p>
+          <h2>Vorher. Nachher. Ordentlich.</h2>
+          <p>Ein paar Beispiele, damit man sofort sieht, wie stark der Unterschied sein kann.</p>
         </div>
         <div class="story-grid">
           ${stories.map(renderStory).join('')}
@@ -299,10 +379,11 @@ document.querySelector('#app').innerHTML = `
         <div class="section-heading section-heading--split">
           <div>
             <p class="eyebrow">Arsen Movsisyan</p>
-            <h2>Ein Ansprechpartner, der selbst mit anpackt.</h2>
+            <h2>Der Mann, der wirklich kommt.</h2>
           </div>
           <p>
-            Von der ersten Besichtigung bis zur letzten Fuge bleibt es klar, direkt und sauber.
+            Kein Zwischenverkauf, kein Callcenter, keine lose Nummer. Du redest direkt mit Arsen
+            und bekommst eine ehrliche Ansage.
           </p>
         </div>
         <div class="portrait-grid">
@@ -310,31 +391,38 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Bildwelt</p>
-          <h2>Modern, ruhig und mehr Galerie als Broschuere.</h2>
-          <p>Genau die Richtung, die du mit Grove gemeint hast.</p>
-        </div>
-        <div class="gallery-grid">
-          ${gallery.map(renderGalleryItem).join('')}
-        </div>
-      </section>
-
       <section id="kontakt" class="section">
         <div class="contact-panel">
           <div class="contact-panel__copy">
             <p class="eyebrow">Kontakt</p>
-            <h2>Ein Anruf reicht. Den Rest machen wir ordentlich.</h2>
+            <h2>Ruf Arsen an. Dann laeuft es.</h2>
             <p>
-              HS-AM uebernimmt Renovierungs- und Ausbesserungsarbeiten aller Art in Gelsenkirchen
-              und Umgebung.
+              Wenn du ein Foto schickst oder kurz anrufst, bekommst du schnell eine klare
+              Einschaetzung. Wenn es passt, legen wir los.
             </p>
+            <div class="contact-panel__actions">
+              <a class="button button--primary" href="tel:+492099723154">Arsen anrufen</a>
+              <a class="button button--ghost" href="mailto:info@hs-am.de?subject=HS-AM%20Anfrage">Foto
+              mailen</a>
+            </div>
           </div>
           <div class="contact-grid">
             ${contactItems.map(renderContactItem).join('')}
           </div>
         </div>
+        <article class="final-cta">
+          <p class="eyebrow eyebrow--light">Letzter Schritt</p>
+          <h2>Wenn es ordentlich gemacht werden soll, ist Arsen dein erster Anruf.</h2>
+          <p>
+            Kein Formular-Marathon. Keine leeren Phrasen. Ruf direkt an oder schick ein Foto per
+            Mail, dann weisst du schnell, wie es weitergeht.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="tel:+492099723154">Jetzt Arsen anrufen</a>
+            <a class="button button--ghost" href="mailto:info@hs-am.de?subject=HS-AM%20Anfrage">Mail
+            senden</a>
+          </div>
+        </article>
       </section>
     </main>
 
@@ -352,6 +440,41 @@ document.querySelector('#app').innerHTML = `
       </div>
     </footer>
 
-    <a class="mobile-call" href="tel:+492099723154">Anrufen</a>
+    <a class="mobile-call" href="tel:+492099723154">Arsen anrufen</a>
   </div>
 `
+
+const loadVideo = (video) => {
+  if (video.dataset.loaded === 'true') {
+    return
+  }
+
+  const source = document.createElement('source')
+  source.src = video.dataset.src
+  source.type = 'video/mp4'
+  video.appendChild(source)
+  video.dataset.loaded = 'true'
+  video.load()
+}
+
+const inlineVideos = document.querySelectorAll('video[data-src]')
+
+if ('IntersectionObserver' in window) {
+  const observer = new IntersectionObserver(
+    (entries, obs) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return
+        }
+
+        loadVideo(entry.target)
+        obs.unobserve(entry.target)
+      })
+    },
+    { rootMargin: '200px 0px' },
+  )
+
+  inlineVideos.forEach((video) => observer.observe(video))
+} else {
+  inlineVideos.forEach(loadVideo)
+}
